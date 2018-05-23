@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="StaplesSuite" parallel="none">
+
+<listeners>
+    <listener class-name="Com.Staples.CommonLib.testNGListners" />
+    <listener class-name="Com.Staples.CommonLib.testNGReportListners" />
+  </listeners>
+  
+ 
+   <test  name="Staples_CornerStone_IEBrowser">
+
+    <parameter name="browser" value="IE"/>
+    
+    <classes>      
+      <class name="Com.Staples.CommonLib.Baseclass"/>  
+      <class name="Com.Staples.ProjectSpecificLib.corner"/>
+      <class name="Com.Staples.TestngTestCases.cornerstoneTestngClass"/>    
+    </classes>
+    
+  </test> 
+   <!-- <test  name="Staples_EDSMedallia-FirefoxBrowser">
+  
+    <parameter name="browser" value="firefox"/>
+    
+    <classes>      
+      <class name="Com.Staples.CommonLib.Baseclass"/>  
+      <class name="Com.Staples.ProjectSpecificLib.Reflexis"/>
+      <class name="Com.Staples.TestngTestCases.reflexisTestngClass"/>    
+    </classes>
+  </test> 
+   <test  name="Staples_EDSMedallia-ChromeBrowser">
+  
+    <parameter name="browser" value="Chrome"/>
+    
+    <classes>      
+      <class name="Com.Staples.CommonLib.Baseclass"/>  
+      <class name="Com.Staples.ProjectSpecificLib.Reflexis"/>
+      <class name="Com.Staples.TestngTestCases.reflexisTestngClass"/>    
+    </classes>
+  </test>  -->
+  
+  <!-- Staples -->
+<!-- StaplesSuite -->
+</suite> 
+

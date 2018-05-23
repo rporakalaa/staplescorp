@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [TestngSuite]">
+  <test name="Staples(failed)" parallel="tests">
+    <classes>
+      <class name="Com.Staples.Utilites.screenShot">
+        <methods>
+          <include name="takeScreenshot"/>
+        </methods>
+      </class> <!-- Com.Staples.Utilites.screenShot -->
+    </classes>
+  </test> <!-- Staples(failed) -->
+</suite> <!-- Failed suite [TestngSuite] -->

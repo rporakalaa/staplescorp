@@ -1,0 +1,15 @@
+<h2>Reporter output</h2><table><tr><td>Admin trying to login</td></tr>
+<tr><td>Admin logedout successfully</td></tr>
+<tr><td>Admin trying login with invalid password</td></tr>
+<tr><td>Authenticationfail</td></tr>
+<tr><td>Admin trying login with invalid Username</td></tr>
+<tr><td>Authenticationfail</td></tr>
+<tr><td>Admin trying login with invalid Username</td></tr>
+<tr><td>Authenticationfail</td></tr>
+<tr><td>Admin trying login with invalid Username</td></tr>
+<tr><td>Authenticationfail</td></tr>
+<tr><td>Admin trying login with invalid Username</td></tr>
+<tr><td>Authenticationfail</td></tr>
+<tr><td>Admin trying login with invalid Username</td></tr>
+<tr><td>Authenticationfail</td></tr>
+</table>

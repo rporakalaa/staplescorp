@@ -1,0 +1,130 @@
+package Com.Staples.ProjectSpecificLib;
+
+
+
+import java.io.IOException;
+
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import Com.Stapels.ExcelLib.ExcelLib;
+import Com.Staples.CommonLib.*;
+import Com.Staples.PageObjectModel.stapelsLogin;
+
+
+
+
+public class devcorpidm extends CommonLibs{
+	
+
+	static String actularesult="Login/password combination is invalid.";
+	static String expectedresult="Login/password combination is invalid.";
+	
+	public void staplesLoginTest(String Username, String Password) throws InterruptedException, InvalidFormatException, IOException
+	{
+		
+				
+		stapelsLogin login=PageFactory.initElements(Baseclass.driver, stapelsLogin.class);	
+		Baseclass.driver.get(ExcelLib.getExcelData("Testing", 7, 0));		
+		waitForPageToLoad(Baseclass.driver);
+		login.getUserName().sendKeys(Username);
+		Thread.sleep(2000);
+		login.getPassword().sendKeys(Password);
+		Thread.sleep(2000);
+		login.getSubmit().click();
+		waitForclassname(Baseclass.driver, "hidden-sm");
+		login.getLogoutbutton().click();
+		Thread.sleep(2000);
+		login.getLogoutclick().click();
+		Thread.sleep(2000);
+		
+	}
+
+public void testAuthenticationInvalidPassword(String Username,String Password) throws InterruptedException, InvalidFormatException, IOException
+	{
+	
+		stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+		Baseclass.driver.get(ExcelLib.getExcelData("Testing", 7, 0));
+		waitForPageToLoad(Baseclass.driver);
+		login.getUserName().sendKeys(Username);		
+		Thread.sleep(2000);
+		login.getPassword().sendKeys(Password);
+		Thread.sleep(2000);
+		login.getSubmit().click();
+		Thread.sleep(2000);
+		
+	}
+
+public void testAuthenticationInvalidUsername(String Username,String Password) throws InterruptedException, InvalidFormatException, IOException
+{
+	
+	stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+	Baseclass.driver.get(ExcelLib.getExcelData("Testing", 7, 0));
+	waitForPageToLoad(Baseclass.driver);
+	login.getUserName().sendKeys(Username);
+	Thread.sleep(2000);
+	login.getPassword().sendKeys(Password);
+	Thread.sleep(2000);
+	login.getSubmit().click();
+	Thread.sleep(2000);
+	
+}
+public void testAuthenticationBlankcredentials(String Username,String Password) throws InterruptedException, InvalidFormatException, IOException
+{
+	stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+	Baseclass.driver.get(ExcelLib.getExcelData("Testing", 7, 0));
+	waitForPageToLoad(Baseclass.driver);
+	login.getUserName().sendKeys(Username);
+	Thread.sleep(2000);
+	login.getPassword().sendKeys(Password);
+	Thread.sleep(2000);
+	login.getSubmit().click();
+	Thread.sleep(2000);
+	
+}
+public void testAuthenticationwithEmptyPasswordField(String Username,String Password) throws InterruptedException, InvalidFormatException, IOException
+{
+	stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+	Baseclass.driver.get(ExcelLib.getExcelData("Testing", 7, 0));
+	waitForPageToLoad(Baseclass.driver);
+	login.getUserName().sendKeys(Username);
+	Thread.sleep(2000);
+	login.getPassword().sendKeys(Password);
+	Thread.sleep(2000);
+	login.getSubmit().click();
+	Thread.sleep(2000);
+}
+public void testAuthenticationwithEmptyUserField(String Username,String Password) throws InterruptedException, InvalidFormatException, IOException
+{
+
+	stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+	Baseclass.driver.get(ExcelLib.getExcelData("Testing", 7, 0));
+	waitForPageToLoad(Baseclass.driver);
+	login.getUserName().sendKeys(Username);	
+	Thread.sleep(2000);
+	login.getPassword().sendKeys(Password);
+	Thread.sleep(2000);
+	login.getSubmit().click();
+	Thread.sleep(2000);
+	
+}
+public void testAuthenticationwithInvalidCredentials(String Username,String Password) throws InterruptedException, InvalidFormatException, IOException
+{
+    
+	stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+	Baseclass.driver.get(ExcelLib.getExcelData("Testing", 7, 0));
+	waitForPageToLoad(Baseclass.driver);
+	login.getUserName().sendKeys(Username);
+	Thread.sleep(2000);
+	login.getPassword().sendKeys(Password);
+	Thread.sleep(2000);
+	login.getSubmit().click();
+	Thread.sleep(2000);
+
+}
+}

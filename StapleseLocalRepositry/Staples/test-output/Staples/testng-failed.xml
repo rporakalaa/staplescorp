@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Staples]">
+  <listeners>
+    <listener class-name="Com.Staples.CommonLib.testNGListners"/>
+    <listener class-name="Com.Staples.CommonLib.testNGReportListners"/>
+  </listeners>
+  <test name="StaplesTest(failed)" parallel="tests">
+    <classes>
+      <class name="TestngTestCases.staplesTestngClasses">
+        <methods>
+          <include name="loginTestwithwithEmptyUserNameField"/>
+          <include name="startReport"/>
+          <include name="browserLaunch"/>
+          <include name="loginTestwithInvalidPassword"/>
+          <include name="loginTestwithInvalidUsername"/>
+          <include name="loginTestwithwithEmptyPasswordField"/>
+          <include name="Login"/>
+          <include name="staplesLogin"/>
+          <include name="endReport"/>
+          <include name="loginTestwithwithInvalidCredentials"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestngTestCases.staplesTestngClasses -->
+    </classes>
+  </test> <!-- StaplesTest(failed) -->
+</suite> <!-- Failed suite [Staples] -->

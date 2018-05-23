@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [StaplesSuite]">
+  <listeners>
+    <listener class-name="Com.Staples.CommonLib.testNGListners"/>
+    <listener class-name="Com.Staples.CommonLib.testNGReportListners"/>
+  </listeners>
+  <test thread-count="5" name="Staples_CornerStone_IEBrowser(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="Com.Staples.TestngTestCases.cornerstoneTestngClass">
+        <methods>
+          <include name="cornerstoneloginTestwithInvalidUsername"/>
+          <include name="tearDown"/>
+          <include name="cornerstoneloginTestwithInvalidPassword"/>
+          <include name="startReport"/>
+          <include name="cornerstoneloginTestwithEmptyPasswordField"/>
+          <include name="cornerstoneloginTestwithInvalidCredentials"/>
+          <include name="extentReport"/>
+          <include name="cornerstoneloginTestwithBlankCredentials"/>
+          <include name="cornerstoneloginTestwithEmptyUserNameField"/>
+          <include name="Login"/>
+          <include name="cornerstoneLoginTestWithValidCredentials"/>
+        </methods>
+      </class> <!-- Com.Staples.TestngTestCases.cornerstoneTestngClass -->
+    </classes>
+  </test> <!-- Staples_CornerStone_IEBrowser(failed) -->
+</suite> <!-- Failed suite [StaplesSuite] -->

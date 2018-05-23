@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="StaplesSuite" duration-ms="80922" started-at="2018-05-17T06:09:09Z" finished-at="2018-05-17T06:10:30Z">
+    <groups>
+    </groups>
+    <test name="Staples_CornerStone_IEBrowser" duration-ms="80922" started-at="2018-05-17T06:09:09Z" finished-at="2018-05-17T06:10:30Z">
+      <class name="Com.Staples.CommonLib.Baseclass">
+        <test-method status="PASS" signature="testCasesExecutionStarted(java.lang.String)[pri:0, instance:Com.Staples.CommonLib.Baseclass@1e8284b]" name="testCasesExecutionStarted" duration-ms="5137" started-at="2018-05-17T06:09:09Z" finished-at="2018-05-17T06:09:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCasesExecutionStarted -->
+      </class> <!-- Com.Staples.CommonLib.Baseclass -->
+      <class name="Com.Staples.TestngTestCases.cornerstoneTestngClass">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="startReport" is-config="true" duration-ms="718" started-at="2018-05-17T06:09:09Z" finished-at="2018-05-17T06:09:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="Login" is-config="true" duration-ms="49" started-at="2018-05-17T06:09:15Z" finished-at="2018-05-17T06:09:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="cornerstoneLoginTestWithValidCredentials()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="cornerstoneLoginTestWithValidCredentials" duration-ms="13188" started-at="2018-05-17T06:09:15Z" finished-at="2018-05-17T06:09:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cornerstoneLoginTestWithValidCredentials -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="tearDown" is-config="true" duration-ms="5" started-at="2018-05-17T06:09:28Z" finished-at="2018-05-17T06:09:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cornerstoneLoginTestWithValidCredentials status=SUCCESS method=cornerstoneTestngClass.cornerstoneLoginTestWithValidCredentials()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="Login" is-config="true" duration-ms="31" started-at="2018-05-17T06:09:28Z" finished-at="2018-05-17T06:09:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="cornerstoneloginTestwithBlankCredentials()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="cornerstoneloginTestwithBlankCredentials" duration-ms="9719" started-at="2018-05-17T06:09:28Z" finished-at="2018-05-17T06:09:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cornerstoneloginTestwithBlankCredentials -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-05-17T06:09:38Z" finished-at="2018-05-17T06:09:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cornerstoneloginTestwithBlankCredentials status=SUCCESS method=cornerstoneTestngClass.cornerstoneloginTestwithBlankCredentials()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="Login" is-config="true" duration-ms="18" started-at="2018-05-17T06:09:38Z" finished-at="2018-05-17T06:09:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="cornerstoneloginTestwithEmptyPasswordField()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="cornerstoneloginTestwithEmptyPasswordField" duration-ms="9922" started-at="2018-05-17T06:09:38Z" finished-at="2018-05-17T06:09:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cornerstoneloginTestwithEmptyPasswordField -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-05-17T06:09:48Z" finished-at="2018-05-17T06:09:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cornerstoneloginTestwithEmptyPasswordField status=SUCCESS method=cornerstoneTestngClass.cornerstoneloginTestwithEmptyPasswordField()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="Login" is-config="true" duration-ms="25" started-at="2018-05-17T06:09:48Z" finished-at="2018-05-17T06:09:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="cornerstoneloginTestwithEmptyUserNameField()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="cornerstoneloginTestwithEmptyUserNameField" duration-ms="10000" started-at="2018-05-17T06:09:48Z" finished-at="2018-05-17T06:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cornerstoneloginTestwithEmptyUserNameField -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-05-17T06:09:58Z" finished-at="2018-05-17T06:09:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cornerstoneloginTestwithEmptyUserNameField status=SUCCESS method=cornerstoneTestngClass.cornerstoneloginTestwithEmptyUserNameField()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="Login" is-config="true" duration-ms="18" started-at="2018-05-17T06:09:58Z" finished-at="2018-05-17T06:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="cornerstoneloginTestwithInvalidCredentials()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="cornerstoneloginTestwithInvalidCredentials" duration-ms="10704" started-at="2018-05-17T06:09:58Z" finished-at="2018-05-17T06:10:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cornerstoneloginTestwithInvalidCredentials -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="Login" is-config="true" duration-ms="29" started-at="2018-05-17T06:10:08Z" finished-at="2018-05-17T06:10:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-05-17T06:10:08Z" finished-at="2018-05-17T06:10:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cornerstoneloginTestwithInvalidCredentials status=SUCCESS method=cornerstoneTestngClass.cornerstoneloginTestwithInvalidCredentials()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="cornerstoneloginTestwithInvalidPassword()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="cornerstoneloginTestwithInvalidPassword" duration-ms="10219" started-at="2018-05-17T06:10:08Z" finished-at="2018-05-17T06:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cornerstoneloginTestwithInvalidPassword -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-05-17T06:10:19Z" finished-at="2018-05-17T06:10:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cornerstoneloginTestwithInvalidPassword status=SUCCESS method=cornerstoneTestngClass.cornerstoneloginTestwithInvalidPassword()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="Login" is-config="true" duration-ms="18" started-at="2018-05-17T06:10:19Z" finished-at="2018-05-17T06:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="cornerstoneloginTestwithInvalidUsername()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="cornerstoneloginTestwithInvalidUsername" duration-ms="10235" started-at="2018-05-17T06:10:19Z" finished-at="2018-05-17T06:10:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cornerstoneloginTestwithInvalidUsername -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-05-17T06:10:29Z" finished-at="2018-05-17T06:10:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cornerstoneloginTestwithInvalidUsername status=SUCCESS method=cornerstoneTestngClass.cornerstoneloginTestwithInvalidUsername()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="extentReport()[pri:0, instance:Com.Staples.TestngTestCases.cornerstoneTestngClass@ac1102]" name="extentReport" is-config="true" duration-ms="782" started-at="2018-05-17T06:10:29Z" finished-at="2018-05-17T06:10:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReport -->
+      </class> <!-- Com.Staples.TestngTestCases.cornerstoneTestngClass -->
+    </test> <!-- Staples_CornerStone_IEBrowser -->
+  </suite> <!-- StaplesSuite -->
+</testng-results>

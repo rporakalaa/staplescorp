@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [StaplesSuite]">
+  <listeners>
+    <listener class-name="Com.Staples.CommonLib.testNGListners"/>
+    <listener class-name="Com.Staples.CommonLib.testNGReportListners"/>
+  </listeners>
+  <test name="StaplesTests-IEBrowser(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="Com.Staples.TestngTestCases.staplesTestngClasses">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startReport"/>
+          <include name="Login"/>
+          <include name="endReport"/>
+          <include name="staplesLoginwithValidCredentials"/>
+        </methods>
+      </class> <!-- Com.Staples.TestngTestCases.staplesTestngClasses -->
+    </classes>
+  </test> <!-- StaplesTests-IEBrowser(failed) -->
+</suite> <!-- Failed suite [StaplesSuite] -->

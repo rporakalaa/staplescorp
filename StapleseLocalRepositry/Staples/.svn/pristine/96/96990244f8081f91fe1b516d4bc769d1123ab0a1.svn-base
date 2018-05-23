@@ -1,0 +1,40 @@
+package Com.Staples.PageObjectModel;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+public class stapelsLogin {
+	
+	@FindBy(how = How.CSS, using = "#login")
+	private WebElement UserName;
+	public WebElement getUserName() {
+		return UserName;
+	}
+	public WebElement getPassword() {
+		return Password;
+	}
+	public WebElement getSubmit() {
+		return Submit;
+	}
+	@FindBy(how = How.ID, using = "password")
+	private WebElement Password;
+	@FindBy(how = How.NAME, using = "loginButton")
+	private WebElement Submit;
+	@FindBy(how = How.CSS, using = "#loginContent > li:nth-child(2) > a")
+	private WebElement logoutbutton;
+	@FindBy(how = How.CLASS_NAME, using = "alert-system alert-message alert alert-danger")
+	private WebElement errorMessage;
+	public WebElement getErrorMessage() {
+		return errorMessage;
+	}
+	public WebElement getLogoutbutton() {
+		return logoutbutton;
+	}
+	public WebElement getLogoutclick() {
+		return logoutclick;
+	}
+	@FindBy(how = How.ID, using = "logout_link")
+	private WebElement logoutclick;
+	
+}

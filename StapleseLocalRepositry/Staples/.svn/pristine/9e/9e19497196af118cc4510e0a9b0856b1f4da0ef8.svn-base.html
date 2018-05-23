@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-StaplesSuite">
+              <span class="suite-name border-failed">StaplesSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-StaplesSuite">
+                    <span>C:\Automation\Staples\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-StaplesSuite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-StaplesSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-StaplesSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-StaplesSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-StaplesSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-StaplesSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-StaplesSuite" class="hide-methods failed suite-StaplesSuite"> (hide)</a> <!-- hide-methods failed suite-StaplesSuite -->
+                      <a href="#" panel-name="suite-StaplesSuite" class="show-methods failed suite-StaplesSuite"> (show)</a> <!-- show-methods failed suite-StaplesSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-StaplesSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-StaplesSuite" title="Com.Staples.TestngTestCases.staplesTestngClasses" hash-for-method="staplesLoginwithValidCredentials">staplesLoginwithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-StaplesSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-StaplesSuite" class="hide-methods passed suite-StaplesSuite"> (hide)</a> <!-- hide-methods passed suite-StaplesSuite -->
+                      <a href="#" panel-name="suite-StaplesSuite" class="show-methods passed suite-StaplesSuite"> (show)</a> <!-- show-methods passed suite-StaplesSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-StaplesSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-StaplesSuite" title="Com.Staples.CommonLib.Baseclass" hash-for-method="browserLaunching(firefox)">browserLaunching(firefox)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-StaplesSuite" title="Com.Staples.CommonLib.Baseclass" hash-for-method="browserLaunching(Chrome)">browserLaunching(Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-StaplesSuite" title="Com.Staples.CommonLib.Baseclass" hash-for-method="browserLaunching(IE)">browserLaunching(IE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-StaplesSuite" title="Com.Staples.TestngTestCases.staplesTestngClasses" hash-for-method="staplesLoginwithValidCredentials">staplesLoginwithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-StaplesSuite" title="Com.Staples.TestngTestCases.staplesTestngClasses" hash-for-method="staplesLoginwithValidCredentials">staplesLoginwithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-StaplesSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-StaplesSuite" class="panel StaplesSuite">
+          <div class="suite-StaplesSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Com.Staples.TestngTestCases.staplesTestngClasses</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="staplesLoginwithValidCredentials">
+                  </a> <!-- staplesLoginwithValidCredentials -->
+                  <span class="method-name">staplesLoginwithValidCredentials</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.className: hidden-sm (tried for 20 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at Com.Staples.CommonLib.CommonLibs.waitForclassname(CommonLibs.java:30)
+	at Com.Staples.ProjectSpecificLib.ProjectLib.staplesLoginTest(ProjectLib.java:31)
+	at Com.Staples.TestngTestCases.staplesTestngClasses.staplesLoginwithValidCredentials(staplesTestngClasses.java:70)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.className: hidden-sm
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;RPORAKALA-PC&apos;, ip: &apos;192.168.18.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-StaplesSuite-class-failed -->
+          <div class="suite-StaplesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Com.Staples.TestngTestCases.staplesTestngClasses</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="staplesLoginwithValidCredentials">
+                  </a> <!-- staplesLoginwithValidCredentials -->
+                  <span class="method-name">staplesLoginwithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="staplesLoginwithValidCredentials">
+                  </a> <!-- staplesLoginwithValidCredentials -->
+                  <span class="method-name">staplesLoginwithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-StaplesSuite-class-passed -->
+          <div class="suite-StaplesSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Com.Staples.CommonLib.Baseclass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserLaunching(firefox)">
+                  </a> <!-- browserLaunching(firefox) -->
+                  <span class="method-name">browserLaunching</span>
+                  <span class="parameters">(firefox)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserLaunching(Chrome)">
+                  </a> <!-- browserLaunching(Chrome) -->
+                  <span class="method-name">browserLaunching</span>
+                  <span class="parameters">(Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="browserLaunching(IE)">
+                  </a> <!-- browserLaunching(IE) -->
+                  <span class="method-name">browserLaunching</span>
+                  <span class="parameters">(IE)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-StaplesSuite-class-passed -->
+        </div> <!-- panel StaplesSuite -->
+        <div panel-name="test-xml-StaplesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Automation\Staples\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;StaplesSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Com.Staples.CommonLib.testNGListners&quot;/&gt;
+    &lt;listener class-name=&quot;Com.Staples.CommonLib.testNGReportListners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;StaplesTests-FirefoxBrowser&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Com.Staples.CommonLib.Baseclass&quot;/&gt;
+      &lt;class name=&quot;Com.Staples.ProjectSpecificLib.ProjectLib&quot;/&gt;
+      &lt;class name=&quot;Com.Staples.TestngTestCases.staplesTestngClasses&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- StaplesTests-FirefoxBrowser --&gt;
+  &lt;test name=&quot;StaplesTests-ChromeBrowser&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Com.Staples.CommonLib.Baseclass&quot;/&gt;
+      &lt;class name=&quot;Com.Staples.ProjectSpecificLib.ProjectLib&quot;/&gt;
+      &lt;class name=&quot;Com.Staples.TestngTestCases.staplesTestngClasses&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- StaplesTests-ChromeBrowser --&gt;
+  &lt;test name=&quot;StaplesTests-IEBrowser&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;IE&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Com.Staples.CommonLib.Baseclass&quot;/&gt;
+      &lt;class name=&quot;Com.Staples.ProjectSpecificLib.ProjectLib&quot;/&gt;
+      &lt;class name=&quot;Com.Staples.TestngTestCases.staplesTestngClasses&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- StaplesTests-IEBrowser --&gt;
+&lt;/suite&gt; &lt;!-- StaplesSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-StaplesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for StaplesSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">StaplesTests-FirefoxBrowser (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">StaplesTests-ChromeBrowser (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">StaplesTests-IEBrowser (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-StaplesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for StaplesSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-StaplesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for StaplesSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_StaplesSuite');
+function tableData_StaplesSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'staplesLoginwithValidCredentials')
+data.setCell(0, 2, 'Com.Staples.TestngTestCases.staplesTestngClasses')
+data.setCell(0, 3, 45235);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'staplesLoginwithValidCredentials')
+data.setCell(1, 2, 'Com.Staples.TestngTestCases.staplesTestngClasses')
+data.setCell(1, 3, 30332);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'staplesLoginwithValidCredentials')
+data.setCell(2, 2, 'Com.Staples.TestngTestCases.staplesTestngClasses')
+data.setCell(2, 3, 23169);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'browserLaunching')
+data.setCell(3, 2, 'Com.Staples.CommonLib.Baseclass')
+data.setCell(3, 3, 9429);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'browserLaunching')
+data.setCell(4, 2, 'Com.Staples.CommonLib.Baseclass')
+data.setCell(4, 3, 5148);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'browserLaunching')
+data.setCell(5, 2, 'Com.Staples.CommonLib.Baseclass')
+data.setCell(5, 3, 3649);
+window.suiteTableData['StaplesSuite']= { tableData: data, tableDiv: 'times-div-StaplesSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-StaplesSuite">
+              </div> <!-- times-div-StaplesSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-StaplesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for StaplesSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-StaplesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-StaplesSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Com.Staples.TestngTestCases.staplesTestngClasses</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Com.Staples.CommonLib.Baseclass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">browserLaunching(firefox)</span>
+                <span class="method-start">360 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Com.Staples.TestngTestCases.staplesTestngClasses</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">Login</span>
+                <span class="method-start">9799 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">staplesLoginwithValidCredentials</span>
+                <span class="method-start">10385 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=staplesLoginwithValidCredentials status=SUCCESS method=staplesTestngClasses.staples...)</span>
+                <span class="method-start">55621 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">55625 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">56534 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Com.Staples.CommonLib.Baseclass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">browserLaunching(Chrome)</span>
+                <span class="method-start">56539 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Com.Staples.TestngTestCases.staplesTestngClasses</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">Login</span>
+                <span class="method-start">61689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">staplesLoginwithValidCredentials</span>
+                <span class="method-start">62857 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=staplesLoginwithValidCredentials status=SUCCESS method=staplesTestngClasses.staples...)</span>
+                <span class="method-start">86029 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">86030 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">86355 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Com.Staples.CommonLib.Baseclass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">browserLaunching(IE)</span>
+                <span class="method-start">86358 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Com.Staples.TestngTestCases.staplesTestngClasses</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">Login</span>
+                <span class="method-start">90008 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">staplesLoginwithValidCredentials</span>
+                <span class="method-start">90068 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=staplesLoginwithValidCredentials status=FAILURE method=staplesTestngClasses.staples...)</span>
+                <span class="method-start">120409 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">120826 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

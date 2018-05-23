@@ -1,0 +1,125 @@
+package Com.Staples.ProjectSpecificLib;
+
+
+
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import Com.Staples.CommonLib.*;
+import Com.Staples.PageObjectModel.stapelsLogin;
+
+
+
+
+public class ProjectLib extends CommonLibs{
+
+	static String Adminurl="http://devcorpidm.staples.com:8080/admin";
+	static String actularesult="Login/password combination is invalid.";
+	static String expectedresult="Login/password combination is invalid.";
+	
+	public void staplesLoginTest(String Username, String Password) throws InterruptedException
+	{
+		
+				
+		stapelsLogin login=PageFactory.initElements(Baseclass.driver, stapelsLogin.class);	
+		Baseclass.driver.get(Adminurl);
+		waitForPageToLoad(Baseclass.driver);
+		login.getUserName().sendKeys(Username);
+		Thread.sleep(2000);
+		login.getPassword().sendKeys(Password);
+		Thread.sleep(2000);
+		login.getSubmit().click();
+		waitForclassname(Baseclass.driver, "hidden-sm");
+		login.getLogoutbutton().click();
+		Thread.sleep(2000);
+		login.getLogoutclick().click();
+		Thread.sleep(2000);
+		
+	}
+
+public void testAuthenticationInvalidPassword(String Username,String Password) throws InterruptedException
+	{
+	
+		stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+		Baseclass.driver.get(Adminurl);
+		waitForPageToLoad(Baseclass.driver);
+		login.getUserName().sendKeys(Username);		
+		Thread.sleep(2000);
+		login.getPassword().sendKeys(Password);
+		Thread.sleep(2000);
+		login.getSubmit().click();
+		Thread.sleep(2000);
+		Assert.assertEquals(actularesult, expectedresult);
+	}
+
+public void testAuthenticationInvalidUsername(String Username,String Password) throws InterruptedException
+{
+	
+	stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+	Baseclass.driver.get(Adminurl);
+	waitForPageToLoad(Baseclass.driver);
+	login.getUserName().sendKeys(Username);
+	Thread.sleep(2000);
+	login.getPassword().sendKeys(Password);
+	Thread.sleep(2000);
+	login.getSubmit().click();
+	Thread.sleep(2000);
+	Assert.assertEquals(actularesult, expectedresult);
+}
+public void testAuthenticationBlankcredentials(String Username,String Password) throws InterruptedException
+{
+	stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+	Baseclass.driver.get(Adminurl);
+	waitForPageToLoad(Baseclass.driver);
+	login.getUserName().sendKeys(Username);
+	Thread.sleep(2000);
+	login.getPassword().sendKeys(Password);
+	Thread.sleep(2000);
+	login.getSubmit().click();
+	Thread.sleep(2000);
+	Assert.assertEquals(actularesult, expectedresult);
+}
+public void testAuthenticationwithEmptyPasswordField(String Username,String Password) throws InterruptedException
+{
+	stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+	Baseclass.driver.get(Adminurl);
+	waitForPageToLoad(Baseclass.driver);
+	login.getUserName().sendKeys(Username);
+	Thread.sleep(2000);
+	login.getPassword().sendKeys(Password);
+	Thread.sleep(2000);
+	login.getSubmit().click();
+	Thread.sleep(2000);
+	Assert.assertEquals(actularesult, expectedresult);
+	Thread.sleep(1000);
+}
+public void testAuthenticationwithEmptyUserField(String Username,String Password) throws InterruptedException
+{
+
+	stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+	Baseclass.driver.get(Adminurl);
+	waitForPageToLoad(Baseclass.driver);
+	login.getUserName().sendKeys(Username);	
+	Thread.sleep(2000);
+	login.getPassword().sendKeys(Password);
+	Thread.sleep(2000);
+	login.getSubmit().click();
+	Thread.sleep(2000);
+	Assert.assertEquals(actularesult, expectedresult);
+	
+}
+public void testAuthenticationwithInvalidCredentials(String Username,String Password) throws InterruptedException
+{
+    
+	stapelsLogin login= PageFactory.initElements(Baseclass.driver, stapelsLogin.class);
+	Baseclass.driver.get(Adminurl);
+	waitForPageToLoad(Baseclass.driver);
+	login.getUserName().sendKeys(Username);
+	Thread.sleep(2000);
+	login.getPassword().sendKeys(Password);
+	Thread.sleep(2000);
+	login.getSubmit().click();
+	Thread.sleep(2000);
+	Assert.assertEquals(actularesult, expectedresult);
+	
+}
+}
