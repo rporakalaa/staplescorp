@@ -33,13 +33,13 @@ public static WebDriver driver;
 		}
 		else if(browserName.equalsIgnoreCase("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver","C:\\Staples\\Staples\\DriversPath\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\DriversPath\\chromedriver.exe");
 			driver=new ChromeDriver();
 			
 		}
 		else if(browserName.equalsIgnoreCase("IE"))
 		{
-			System.setProperty("webdriver.ie.driver","C:\\Staples\\Staples\\DriversPath\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"\\DriversPath\\IEDriverServer.exe");
 			//System.setProperty("webdriver.ie.bin","C:\\Program Files\\internet explorer\\iexplore.exe");
 			driver=new InternetExplorerDriver();
 		}	
